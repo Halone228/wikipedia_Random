@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .visible_frame{
+        height: 100%;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section style="display: none;" class="visible_frame">
+        <iframe src="{{ src }}" frameborder="0"></iframe></section>
+    <h1>{{ title }}</h1>
+    <button onclick="document.querySelector('.visible_frame').style.display = 'block';">Увидеть статью</button>
+    <a href="/">Другая статья</a>
+</body>
+</html>
